@@ -520,7 +520,8 @@ class ParticleSystem {
         const colors = [
             'rgba(139, 92, 246, 0.5)',   // Purple
             'rgba(6, 182, 212, 0.5)',    // Cyan
-            'rgba(236, 72, 153, 0.5)'    // Pink
+            'rgba(236, 72, 153, 0.5)',   // Pink
+            'rgba(39, 201, 63, 0.5)'     // Hacker Green
         ];
         return colors[Math.floor(Math.random() * colors.length)];
     }
@@ -1369,3 +1370,135 @@ document.addEventListener('DOMContentLoaded', () => {
 // Export for external use
 window.Cursor3D = Cursor3D;
 window.CursorParticleSystem = CursorParticleSystem;
+
+// ===================================
+// SCROLL PROGRESS BAR
+// ===================================
+class ScrollProgressBar {
+    constructor() {
+        this.progressBar = document.getElementById('scrollProgressBar');
+        if (!this.progressBar) return;
+        this.init();
+    }
+    
+    init() {
+        window.addEventListener('scroll', () => this.updateProgress());
+    }
+    
+    updateProgress() {
+        const windowHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const scrolled = window.pageYOffset;
+        const progress = windowHeight > 0 ? (scrolled / windowHeight) * 100 : 0;
+        this.progressBar.style.width = progress + '%';
+    }
+}
+
+// ===================================
+// INITIALIZE ALL ENHANCEMENTS
+// ===================================
+document.addEventListener('DOMContentLoaded', () => {
+    // Scroll Progress Bar
+    new ScrollProgressBar();
+    
+    // Initialize AOS Library
+    if (window.AOS) {
+        AOS.init({
+            duration: 600,
+            easing: 'ease-in-out-cubic',
+            once: false,
+            mirror: true,
+            offset: 120
+        });
+    }
+    
+    console.log('%c? Modern UI Enhancements Loaded!', 'color: #00d4ff; font-size: 14px;');
+});
+
+// Exports
+window.ScrollProgressBar = ScrollProgressBar;
+
+// ===================================
+// LIVE CODE TYPING EFFECT
+// ===================================
+class LiveCodeEffect {
+    constructor() {
+        this.codeWindow = document.getElementById('live-code-window');
+        this.lineNumbers = document.getElementById('live-line-numbers');
+        if (!this.codeWindow || !this.lineNumbers) return;
+        
+        this.codeLines = [
+            '<span class="code-keyword">class</span> <span class="code-variable">Developer</span>:',
+            '  <span class="code-property">name</span> = <span class="code-string">"Deepak Singh"</span>',
+            '  <span class="code-property">role</span> = <span class="code-string">"Full-Stack Developer"</span>',
+            '  <span class="code-property">experience</span> = <span class="code-number">4</span>',
+            '  <span class="code-property">skills</span> = [',
+            '    <span class="code-string">"Python"</span>, <span class="code-string">"Django"</span>, <span class="code-string">"Next.js"</span>,',
+            '    <span class="code-string">"Tailwind CSS"</span>, <span class="code-string">"Git"</span>, <span class="code-string">"AWS"</span>',
+            '  ]',
+            '  <span class="code-property">passion</span> = <span class="code-string">"Building amazing things"</span>',
+            '',
+            '  <span class="code-keyword">def</span> <span class="code-variable">initialize</span>(self):',
+            '    <span class="code-keyword">return</span> <span class="code-string">"Ready for new challenges!"</span>'
+        ];
+        
+        this.currentLine = 0;
+        this.currentChar = 0;
+        this.isTag = false;
+        this.currentHTML = '';
+        this.lineCount = 1;
+        
+        setTimeout(() => this.typeCode(), 1500);
+    }
+    
+    typeCode() {
+        if (this.currentLine >= this.codeLines.length) {
+            // Restart after a delay
+            setTimeout(() => {
+                this.codeWindow.innerHTML = '';
+                this.lineNumbers.innerHTML = '<span>1</span>';
+                this.currentLine = 0;
+                this.currentChar = 0;
+                this.currentHTML = '';
+                this.lineCount = 1;
+                this.typeCode();
+            }, 10000);
+            return;
+        }
+        
+        const line = this.codeLines[this.currentLine];
+        
+        if (this.currentChar < line.length) {
+            const char = line.charAt(this.currentChar);
+            
+            if (char === '<') this.isTag = true;
+            
+            this.currentHTML += char;
+            this.codeWindow.innerHTML = this.currentHTML;
+            
+            if (char === '>') this.isTag = false;
+            
+            this.currentChar++;
+            
+            let typeSpeed = this.isTag ? 0 : Math.random() * 50 + 20;
+            if (char === ' ') typeSpeed = 10; // faster spaces
+            
+            setTimeout(() => this.typeCode(), typeSpeed);
+        } else {
+            this.currentHTML += '\n';
+            this.codeWindow.innerHTML = this.currentHTML;
+            this.currentLine++;
+            this.currentChar = 0;
+            this.lineCount++;
+            
+            if (this.currentLine < this.codeLines.length) {
+                this.lineNumbers.innerHTML += `<span>${this.lineCount}</span>`;
+            }
+            
+            setTimeout(() => this.typeCode(), Math.random() * 300 + 200); // pause at end of line
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    new LiveCodeEffect();
+});

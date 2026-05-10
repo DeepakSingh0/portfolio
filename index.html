@@ -5,19 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Senior Full-Stack Developer with 4 years of experience specializing in modern web technologies, scalable applications, and innovative solutions.">
     <meta name="keywords" content="Full-Stack Developer, Web Developer, React, Node.js, TypeScript, Portfolio">
-    <meta name="author" content="Full-Stack Developer">
-    <title>Full-Stack Developer | 4 Years Experience | Portfolio</title>
+    <meta name="author" content="Deepak Singh">
+    <title>Deepak Singh | Full-Stack Developer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- AOS Library for scroll animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </head>
 <body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
     <!-- Navigation -->
     <nav class="nav" id="navbar">
         <div class="nav-container">
             <a href="#home" class="nav-logo">
-                <span class="logo-text">Portfolio</span>
+                <span class="logo-text">Deepak</span>
                 <span class="logo-dot">.</span>
             </a>
             <ul class="nav-menu" id="nav-menu">
@@ -25,6 +30,7 @@
                 <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
                 <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
                 <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
@@ -73,9 +79,9 @@
             <div class="hero-text">
                 <div class="hero-badge organic-pulse">
                     <span class="badge-dot"></span>
-                    <span class="badge-text">Open to New Opportunities</span>
+                    <span class="badge-text">SYSTEM ONLINE</span>
                 </div>
-                <p class="hero-greeting bouncy-enter" data-aos="fade-up">Hey there! <span class="emoji-wiggle">👋</span></p>
+                <p class="hero-greeting bouncy-enter" data-aos="fade-up" data-aos-delay="50">Hey there, I'm <span style="font-weight: 700; color: var(--color-primary);">Deepak</span> <span class="emoji-wiggle">👋</span></p>
                 <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
                     <span class="title-line slide-organic-1">I Build</span>
                     <span class="title-line gradient-text glitch slide-organic-2" data-text="Cool Stuff">Cool Stuff</span>
@@ -97,15 +103,8 @@
                     <div class="stat-item organic-lift breathe delay-2">
                         <div class="stat-icon emoji-wiggle">🚀</div>
                         <div class="stat-content">
-                            <span class="stat-number" data-count="50">0</span>
+                            <span class="stat-number" data-count="20">0</span>
                             <span class="stat-label">Projects Completed</span>
-                        </div>
-                    </div>
-                    <div class="stat-item organic-lift breathe delay-3">
-                        <div class="stat-icon emoji-wiggle">⭐</div>
-                        <div class="stat-content">
-                            <span class="stat-number" data-count="30">0</span>
-                            <span class="stat-label">Happy Clients</span>
                         </div>
                     </div>
                 </div>
@@ -115,9 +114,9 @@
                         <span class="btn-text">Check Out My Work</span>
                         <span class="btn-icon">→</span>
                     </a>
-                    <a href="#contact" class="btn btn-secondary friendly-hover shake-on-hover">
-                        <span class="btn-text">Let's Talk</span>
-                        <span class="btn-icon emoji-wiggle">💬</span>
+                    <a href="Deepak's Resume.pdf" download class="btn btn-secondary friendly-hover shake-on-hover">
+                        <span class="btn-text">Download CV</span>
+                        <span class="btn-icon emoji-wiggle">📄</span>
                     </a>
                 </div>
                 
@@ -125,17 +124,26 @@
                 <div class="tech-stack" data-aos="fade-up" data-aos-delay="500">
                     <span class="tech-label">Tech Stack:</span>
                     <div class="tech-icons">
-                        <div class="tech-icon friendly-hover bounce-playful random-delay-1" title="React">
+                        <div class="tech-icon friendly-hover bounce-playful random-delay-3" title="Python">
+                            <span class="emoji-wiggle">🐍</span>
+                        </div>
+                        <div class="tech-icon friendly-hover bounce-playful random-delay-5" title="Django">
+                            <span class="emoji-wiggle">🎸</span>
+                        </div>
+                        <div class="tech-icon friendly-hover bounce-playful random-delay-1" title="Next.js">
                             <span class="emoji-wiggle">⚛️</span>
                         </div>
-                        <div class="tech-icon friendly-hover bounce-playful random-delay-2" title="Node.js">
-                            <span class="emoji-wiggle">🟢</span>
+                        <div class="tech-icon friendly-hover bounce-playful random-delay-1" title="HTML/CSS">
+                            <span class="emoji-wiggle">🎨</span>
                         </div>
-                        <div class="tech-icon friendly-hover bounce-playful random-delay-3" title="TypeScript">
-                            <span class="emoji-wiggle">📘</span>
+                        <div class="tech-icon friendly-hover bounce-playful random-delay-2" title="Tailwind CSS">
+                            <span class="emoji-wiggle">🌊</span>
                         </div>
-                        <div class="tech-icon friendly-hover bounce-playful random-delay-4" title="Python">
-                            <span class="emoji-wiggle">🐍</span>
+                        <div class="tech-icon friendly-hover bounce-playful random-delay-4" title="Git">
+                            <span class="emoji-wiggle">☁️</span>
+                        </div>
+                        <div class="tech-icon friendly-hover bounce-playful random-delay-3" title="AWS">
+                            <span class="emoji-wiggle">📦</span>
                         </div>
                         <div class="tech-icon friendly-hover bounce-playful random-delay-5" title="Database">
                             <span class="emoji-wiggle">🗄️</span>
@@ -154,30 +162,16 @@
                                 <span class="dot dot-yellow"></span>
                                 <span class="dot dot-green"></span>
                             </div>
-                            <span class="window-title">developer.tsx</span>
+                            <span class="window-title">developer.py</span>
                             <div class="window-actions">
                                 <span class="action-icon">⚙️</span>
                             </div>
                         </div>
-                        <div class="window-content">
-                            <div class="line-numbers">
+                        <div class="window-content" style="position: relative; min-height: 250px;">
+                            <div class="line-numbers" id="live-line-numbers">
                                 <span>1</span>
-                                <span>2</span>
-                                <span>3</span>
-                                <span>4</span>
-                                <span>5</span>
-                                <span>6</span>
-                                <span>7</span>
-                                <span>8</span>
                             </div>
-                            <pre><code><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {
-  <span class="code-property">name</span>: <span class="code-string">"Full-Stack Developer"</span>,
-  <span class="code-property">experience</span>: <span class="code-number">4</span>,
-  <span class="code-property">skills</span>: [
-    <span class="code-string">"React"</span>, <span class="code-string">"Node.js"</span>, <span class="code-string">"TypeScript"</span>
-  ],
-  <span class="code-property">passion</span>: <span class="code-string">"Building amazing things"</span>
-};</code></pre>
+                            <pre><code id="live-code-window"></code><span class="blinking-cursor">|</span></pre>
                         </div>
                         <div class="code-cursor"></div>
                     </div>
@@ -188,14 +182,6 @@
                         <div class="card-text">
                             <div class="card-value">98%</div>
                             <div class="card-label">Success Rate</div>
-                        </div>
-                    </div>
-                    
-                    <div class="floating-card card-2 imperfect-circle breathe">
-                        <div class="card-icon emoji-wiggle">🏆</div>
-                        <div class="card-text">
-                            <div class="card-value">15+</div>
-                            <div class="card-label">Awards</div>
                         </div>
                     </div>
                 </div>
@@ -227,36 +213,40 @@
             <div class="about-content">
                 <div class="about-text">
                     <p class="about-intro">
-                        I'm a passionate <strong>Full-Stack Developer</strong> with 4 years of hands-on experience 
-                        building scalable web applications and innovative digital solutions.
+                        Hi, I'm <strong>Deepak Singh</strong>, a passionate <strong>Full-Stack Developer</strong> with over 4 years of hands-on experience 
+                        specializing in Next.js and Django.
                     </p>
                     <p class="about-description">
-                        My journey in software development has equipped me with a comprehensive skill set spanning 
-                        both frontend and backend technologies. I specialize in creating seamless user experiences 
-                        while ensuring robust, maintainable code architecture.
+                        Expert in architecting scalable web applications, designing robust RESTful APIs, and optimizing complex data workflows. 
+                        My experience spans across healthcare, staffing, and translation industries where I've delivered high-impact enterprise solutions.
                     </p>
                     <p class="about-description">
-                        I thrive in collaborative environments and am constantly learning new technologies to stay 
-                        at the forefront of web development. My approach combines technical excellence with creative 
-                        problem-solving to deliver solutions that exceed expectations.
+                        I have a proven track record of reducing booking latencies, automating complex financial workflows, and 
+                        ensuring data integrity and system performance.
                     </p>
                     <div class="about-highlights">
-                        <div class="highlight-item">
-                            <div class="highlight-icon">🚀</div>
+                        <div class="highlight-item" style="border-left: 3px solid var(--color-primary); box-shadow: 0 4px 20px rgba(0, 119, 255, 0.1);">
+                            <div class="highlight-icon" style="color: var(--color-primary);">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                            </div>
                             <div class="highlight-content">
                                 <h3>Performance Focused</h3>
                                 <p>Optimizing applications for speed and efficiency</p>
                             </div>
                         </div>
-                        <div class="highlight-item">
-                            <div class="highlight-icon">💡</div>
+                        <div class="highlight-item" style="border-left: 3px solid var(--color-secondary); box-shadow: 0 4px 20px rgba(0, 212, 255, 0.1);">
+                            <div class="highlight-icon" style="color: var(--color-secondary);">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2v1"/><path d="M12 7a5 5 0 0 0-5 5c0 2 1.5 3 2 4.5V18h6v-1.5c.5-1.5 2-2.5 2-4.5a5 5 0 0 0-5-5z"/></svg>
+                            </div>
                             <div class="highlight-content">
                                 <h3>Problem Solver</h3>
                                 <p>Turning complex challenges into elegant solutions</p>
                             </div>
                         </div>
-                        <div class="highlight-item">
-                            <div class="highlight-icon">🎯</div>
+                        <div class="highlight-item" style="border-left: 3px solid var(--color-accent); box-shadow: 0 4px 20px rgba(102, 0, 255, 0.1);">
+                            <div class="highlight-icon" style="color: var(--color-accent);">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                            </div>
                             <div class="highlight-content">
                                 <h3>Detail Oriented</h3>
                                 <p>Crafting pixel-perfect, accessible interfaces</p>
@@ -265,18 +255,9 @@
                     </div>
                 </div>
                 <div class="about-image">
-                    <div class="image-wrapper">
-                        <div class="image-placeholder">
-                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="100" cy="100" r="80" fill="url(#grad1)"/>
-                                <defs>
-                                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
-                                        <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                        </div>
+                    <div class="image-wrapper" style="position: relative;">
+                        <div class="image-glow" style="position: absolute; top: -10%; left: -10%; right: -10%; bottom: -10%; background: radial-gradient(circle, rgba(0, 119, 255, 0.3) 0%, transparent 70%); z-index: -1; animation: pulse-glow 4s ease-in-out infinite;"></div>
+                        <img src="profile-art.png" alt="Developer Profile Art" style="width: 100%; max-width: 400px; border-radius: 20px; border: 1px solid var(--color-border); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5); object-fit: cover; aspect-ratio: 1/1;" />
                     </div>
                 </div>
             </div>
@@ -533,6 +514,92 @@
         </div>
     </section>
 
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What Others Say</span>
+                <h2 class="section-title">Client Testimonials</h2>
+            </div>
+            <div class="testimonials-grid">
+                <article class="testimonial-card" data-aos="fade-up">
+                    <div class="testimonial-header">
+                        <div class="stars">
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                        </div>
+                        <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M3 21c3 0 7-1 7-8V5c0-1.25-4.716-5-7-5-1.25 0-4 1-4 3.5C0 8 3 10 3 13.5 3 17 0 20 3 21z"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">
+                        "Deepak's development expertise transformed our vision into reality. His attention to detail and problem-solving skills are exceptional. Highly recommended!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👨‍💼</div>
+                        <div class="author-info">
+                            <h4 class="author-name">John Mitchell</h4>
+                            <p class="author-title">CEO at TechStart</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-header">
+                        <div class="stars">
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                        </div>
+                        <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M3 21c3 0 7-1 7-8V5c0-1.25-4.716-5-7-5-1.25 0-4 1-4 3.5C0 8 3 10 3 13.5 3 17 0 20 3 21z"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">
+                        "Working with Deepak was a game-changer for our project. Fast delivery, clean code, and outstanding communication throughout. 5 stars!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👩‍💼</div>
+                        <div class="author-info">
+                            <h4 class="author-name">Sarah Williams</h4>
+                            <p class="author-title">Product Manager at WebFlow</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-header">
+                        <div class="stars">
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                        </div>
+                        <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M3 21c3 0 7-1 7-8V5c0-1.25-4.716-5-7-5-1.25 0-4 1-4 3.5C0 8 3 10 3 13.5 3 17 0 20 3 21z"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">
+                        "Deepak is not just a developer; he's a strategic partner. His insights helped us avoid costly mistakes and delivered a scalable solution."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👨‍🔬</div>
+                        <div class="author-info">
+                            <h4 class="author-name">Alex Chen</h4>
+                            <p class="author-title">Founder at DataSync</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <!-- Experience Section -->
     <section class="experience" id="experience">
         <div class="container">
@@ -542,55 +609,55 @@
             </div>
             <div class="timeline">
                 <div class="timeline-item">
-                    <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">2022 - Present</span>
-                        <h3 class="timeline-title">Senior Full-Stack Developer</h3>
-                        <p class="timeline-company">Tech Innovation Inc.</p>
+                        <span class="timeline-date">09/2024 - Present</span>
+                        <h3 class="timeline-title">Full Stack Developer</h3>
+                        <p class="timeline-company" style="display: flex; align-items: center; gap: 0.5rem;">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg> Qtrans Language Solutions Global
+                        </p>
                         <p class="timeline-description">
-                            Leading development of enterprise-scale applications, mentoring junior developers, 
-                            and architecting scalable solutions using modern tech stack.
+                            Architecting and maintaining scalable full-stack applications, including a Translator Vendor Booking System and a Quotation System, using Next.js and Django.
                         </p>
                         <ul class="timeline-achievements">
-                            <li>Improved application performance by 40%</li>
-                            <li>Led team of 5 developers on critical projects</li>
-                            <li>Implemented CI/CD pipeline reducing deployment time by 60%</li>
+                            <li>Engineered robust RESTful APIs and automated data pipelines integrated with PostgreSQL</li>
+                            <li>Streamlined complex workflows like bulk vendor onboarding and dynamic rate calculations</li>
+                            <li>Collaborated closely with cross-functional teams to deliver efficient, high-quality solutions</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="timeline-item">
-                    <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">2021 - 2022</span>
-                        <h3 class="timeline-title">Full-Stack Developer</h3>
-                        <p class="timeline-company">Digital Solutions Ltd.</p>
+                        <span class="timeline-date">04/2023 - 07/2024</span>
+                        <h3 class="timeline-title">Full Stack Developer</h3>
+                        <p class="timeline-company" style="display: flex; align-items: center; gap: 0.5rem;">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg> Promax Infosolutions
+                        </p>
                         <p class="timeline-description">
-                            Developed and maintained multiple client projects, focusing on responsive 
-                            web applications and RESTful API development.
+                            Developed high-quality web solutions by mastering and implementing a diverse stack including Next.js, Tailwind CSS, and Django across multiple client projects.
                         </p>
                         <ul class="timeline-achievements">
-                            <li>Delivered 15+ successful projects</li>
-                            <li>Reduced bug reports by 35% through comprehensive testing</li>
-                            <li>Implemented modern frontend architecture</li>
+                            <li>Enhanced project delivery cycles for healthcare and staffing platforms</li>
+                            <li>Significantly improved technical workflows and system performance</li>
+                            <li>Contributed to full-stack development ensuring scalable solutions</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="timeline-item">
-                    <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">2020 - 2021</span>
-                        <h3 class="timeline-title">Junior Full-Stack Developer</h3>
-                        <p class="timeline-company">StartUp Ventures</p>
+                        <span class="timeline-date">03/2022 - 03/2023</span>
+                        <h3 class="timeline-title">System Engineer Level - 1</h3>
+                        <p class="timeline-company" style="display: flex; align-items: center; gap: 0.5rem;">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> APPWRK IT SOLUTIONS PVT LTD
+                        </p>
                         <p class="timeline-description">
-                            Started career building full-stack applications, learning best practices, 
-                            and contributing to various startup projects.
+                            Developed a real-time Cloud Monitoring Dashboard using Django and MySQL, implementing secure user authentication and automated revenue tracking logic.
                         </p>
                         <ul class="timeline-achievements">
-                            <li>Built responsive web applications from scratch</li>
-                            <li>Collaborated with cross-functional teams</li>
-                            <li>Rapidly learned new technologies and frameworks</li>
+                            <li>Implemented automated revenue tracking logic for node infrastructure</li>
+                            <li>Detail-oriented learning and hands-on implementation</li>
+                            <li>Contributed significantly to problem-solving abilities within the team</li>
                         </ul>
                     </div>
                 </div>
@@ -616,43 +683,44 @@
                             <div class="method-icon">📧</div>
                             <div class="method-content">
                                 <h4>Email</h4>
-                                <a href="mailto:developer@example.com">developer@example.com</a>
+                                <a href="mailto:deepak.singh@example.com">deepaksingh5279@gmail.com</a>
                             </div>
                         </div>
                         <div class="contact-method">
                             <div class="method-icon">📱</div>
                             <div class="method-content">
                                 <h4>Phone</h4>
-                                <a href="tel:+1234567890">+1 (234) 567-890</a>
+                                <a href="tel:+1234567890">+91 9507369823</a>
                             </div>
                         </div>
                         <div class="contact-method">
                             <div class="method-icon">📍</div>
                             <div class="method-content">
                                 <h4>Location</h4>
-                                <p>San Francisco, CA</p>
+                                <p>Bengaluru, India</p>
                             </div>
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="#" class="social-link" aria-label="GitHub">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
+                        <a href="https://www.linkedin.com/in/erdeepaksingh/" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <svg width="36" height="36" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect x="2" y="2" width="28" height="28" rx="14" fill="#1275B1"></rect> <path d="M12.6186 9.69215C12.6186 10.6267 11.8085 11.3843 10.8093 11.3843C9.81004 11.3843 9 10.6267 9 9.69215C9 8.7576 9.81004 8 10.8093 8C11.8085 8 12.6186 8.7576 12.6186 9.69215Z" fill="white"></path> <path d="M9.24742 12.6281H12.3402V22H9.24742V12.6281Z" fill="white"></path> <path d="M17.3196 12.6281H14.2268V22H17.3196C17.3196 22 17.3196 19.0496 17.3196 17.2049C17.3196 16.0976 17.6977 14.9855 19.2062 14.9855C20.911 14.9855 20.9008 16.4345 20.8928 17.5571C20.8824 19.0244 20.9072 20.5219 20.9072 22H24V17.0537C23.9738 13.8954 23.1508 12.4401 20.4433 12.4401C18.8354 12.4401 17.8387 13.1701 17.3196 13.8305V12.6281Z" fill="white"></path> </g></svg>
+                        </a>
+                        <a href="https://github.com/DeepakSingh0" target="_blank" class="social-link" aria-label="GitHub">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                             </svg>
                         </a>
-                        <a href="#" class="social-link" aria-label="LinkedIn">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="social-link" aria-label="Twitter">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
-                            </svg>
+                        <a href="https://wa.me/919507369823?text=Hello%20Deepak" target="_blank" class="social-link" aria-label="WhatsApp">
+                            <svg width="36" height="36" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z" fill="#BFC8D0"></path> <path d="M28 16C28 22.6274 22.6274 28 16 28C13.4722 28 11.1269 27.2184 9.19266 25.8837L5.09091 26.9091L6.16576 22.8784C4.80092 20.9307 4 18.5589 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16Z" fill="url(#paint0_linear_87_7264)"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2C8.26801 2 2 8.26801 2 16C2 18.5109 2.661 20.8674 3.81847 22.905L2 30L9.31486 28.3038C11.3014 29.3854 13.5789 30 16 30ZM16 27.8462C22.5425 27.8462 27.8462 22.5425 27.8462 16C27.8462 9.45755 22.5425 4.15385 16 4.15385C9.45755 4.15385 4.15385 9.45755 4.15385 16C4.15385 18.5261 4.9445 20.8675 6.29184 22.7902L5.23077 26.7692L9.27993 25.7569C11.1894 27.0746 13.5046 27.8462 16 27.8462Z" fill="white"></path> <path d="M12.5 9.49989C12.1672 8.83131 11.6565 8.8905 11.1407 8.8905C10.2188 8.8905 8.78125 9.99478 8.78125 12.05C8.78125 13.7343 9.52345 15.578 12.0244 18.3361C14.438 20.9979 17.6094 22.3748 20.2422 22.3279C22.875 22.2811 23.4167 20.0154 23.4167 19.2503C23.4167 18.9112 23.2062 18.742 23.0613 18.696C22.1641 18.2654 20.5093 17.4631 20.1328 17.3124C19.7563 17.1617 19.5597 17.3656 19.4375 17.4765C19.0961 17.8018 18.4193 18.7608 18.1875 18.9765C17.9558 19.1922 17.6103 19.083 17.4665 19.0015C16.9374 18.7892 15.5029 18.1511 14.3595 17.0426C12.9453 15.6718 12.8623 15.2001 12.5959 14.7803C12.3828 14.4444 12.5392 14.2384 12.6172 14.1483C12.9219 13.7968 13.3426 13.254 13.5313 12.9843C13.7199 12.7145 13.5702 12.305 13.4803 12.05C13.0938 10.953 12.7663 10.0347 12.5 9.49989Z" fill="white"></path> <defs> <linearGradient id="paint0_linear_87_7264" x1="26.5" y1="7" x2="4" y2="28" gradientUnits="userSpaceOnUse"> <stop stop-color="#5BD066"></stop> <stop offset="1" stop-color="#27B43E"></stop> </linearGradient> </defs> </g></svg>
                         </a>
                     </div>
                 </div>
-                <form class="contact-form" id="contact-form">
+                <!-- Using FormSubmit for free, zero-config email forwarding -->
+                <form class="contact-form" id="contact-form" action="https://formsubmit.co/deepak.singh@example.com" method="POST">
+                    <!-- Disable captcha for better UX -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <!-- Setup the email template subject line -->
+                    <input type="hidden" name="_subject" value="New message from Portfolio!">
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" required placeholder="Your Name">
@@ -680,7 +748,7 @@
         <div class="container">
             <div class="footer-content">
                 <p class="footer-text">
-                    © 2026 Full-Stack Developer. Crafted with passion and code.
+                    © 2026 Deepak Singh. Crafted with passion and code.
                 </p>
                 <div class="footer-links">
                     <a href="#home">Home</a>

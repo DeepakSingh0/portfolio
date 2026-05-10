@@ -1,0 +1,235 @@
+Deepak Singh 
+Software Developer 
+Full Stack Developer
+ with over 
+4 
+years of experience specializing in 
+Next.js
+ 
+and 
+Django
+ . Expert in architecting scalable
+web applications, designing robust 
+RESTful APIs
+ , and optimizing complex data workﬂows. Proven track record in
+delivering 
+high-impact enterprise solutions with a focus on data integrity and system performance. 
+deepaksingh5279@gmail.com 
+9507369823 
+linkedin.com/in/deepak-singh-18971b194 
+github.com/DeepakSingh0 
+WORK EXPERIENCE 
+Full stack developer 
+Qtrans Language Solutions Global 
+09/2024 - Present
+, 
+ 
+Remote (California) 
+Architecting and maintaining scalable full-stack applications
+ ,
+including a 
+Translator Vendor Booking System
+ 
+and a 
+Quotation
+System
+ , using 
+Next.js
+ 
+and 
+Django 
+and 
+Engineered robust RESTful
+APIs and automated data pipelines
+ 
+integrated with 
+PostgreSQL
+ ,
+streamlining complex workﬂows like bulk vendor onboarding and
+dynamic rate calculations etc. Collaborated closely with cross-
+functional teams to deliver eﬃcient, high-quality solutions and
+ensure smooth 
+deployment 
+and 
+integration
+. 
+Full Stack Developer 
+Promax Infosolutions 
+04/2023 - 07/2024
+, 
+ 
+Ahmedabad 
+Developed high-quality web solutions
+ 
+by mastering and
+implementing a diverse stack including 
+Next.js, Tailwind CSS, and
+Django
+ 
+across multiple client projects(healthcare, staﬃng) and
+Enhanced project delivery cycles
+ 
+for healthcare and staﬃng
+platforms by contributing to full-stack development, signiﬁcantly
+improving technical workﬂows and system performance. 
+System Engineer Level - 1 
+APPWRK IT SOLUTIONS PVT LTD 
+03/2022 - 03/2023
+, 
+ 
+Mohali 
+Developed a real-time Cloud Monitoring Dashboard
+ 
+using
+Django
+ 
+and 
+MySQL
+ , implementing secure user authentication and
+automated revenue tracking logic for node infrastructure, My
+experience is rooted in detail-oriented learning and hands-on
+implementation, contributing signiﬁcantly to my skill set and
+problem-solving
+ abilities. 
+EDUCATION 
+M.Tech (CSE) 
+Swami Vivekanand Institute of Engineering
+and Technology 
+08/2022 - Present
+, 
+ 
+Chandigarh 
+B.Tech (CSE) 
+Swami Vivekanand Institute of Engineering
+and Technology 
+08/2018 - 05/2022
+, 
+ 
+Chandigarh 
+Higher Secondary Education 
+R.B.S Inter College 
+04/2018
+, 
+ 
+Jehanabad 
+SKILLS 
+DJANGO 
+PYTHON 
+NEXT JS 
+REACT JS 
+HTML 
+CSS 
+TAILWIND CSS 
+JAVASCRIPT 
+MYSQL 
+GIT 
+LINUX 
+AWS 
+PROJECTS 
+Translator Vendor Booking System 
+Architected and deployed
+ 
+a high-concurrency vendor
+management ecosystem using 
+Next.js
+ 
+and 
+Django REST
+Framework
+ , reducing booking latency by 
+60%
+ 
+for a
+global network. 
+Architected a high-performance data pipeline
+ 
+for bulk
+onboarding that parses 
+CSV/Excel
+ 
+ﬁles, automating the
+creation of 
+100+ user proﬁles
+ 
+while ensuring 
+90% 
+data
+integrity through backend validation. 
+Optimized resource discovery
+ 
+by implementing an
+advanced "Combined Search" algorithm, reducing
+administrative search time by 
+40%
+ 
+through complex
+ﬁltering of language pairs and keywords 
+and 
+Automated
+a dynamic reporting suite
+ 
+to generate real-time
+PDF/CSV/Excel exports
+ 
+, saving the administrative team
+10 hours per week
+ 
+in manual documentation. 
+Quotation System 
+Automated complex ﬁnancial workﬂows
+ 
+by engineering
+a quotation engine that integrates Excel-based rate
+sheets with a 
+Django/PostgreSQL
+ 
+backend, reducing
+manual calculation time by 
+80% 
+and 
+Engineered a
+dynamic multi-factor logic system
+ 
+to calculate service
+rates based on source/target languages, regions, and
+client-speciﬁc agents, ensuring 
+90% accuracy
+ 
+in pricing. 
+Engineered a comprehensive administrative suite
+featuring 
+Role-Based Access Control (RBAC)
+ , real-time
+activity logs, and automated 
+PDF/CSV reporting
+ , which
+streamlined stakeholder communication and improved
+system security protocols by 
+80%
+. 
+Frontline Insourcing 
+Architected a responsive healthcare recovery platform
+using 
+Next.js
+ 
+and 
+Tailwind CSS
+ , delivering an accessible
+interface for patients to navigate specialty services and
+health recovery resources. 
+By utilizing 
+UK 
+healthcare facilities, especially during oﬀ-
+hours, we enhance 
+patient 
+choices, address the Covid
+backlog, and support a 
+robust 
+recovery process. 
+LANGUAGES 
+English 
+Professional Working
+Proﬁciency 
+Hindi 
+Native or Bilingual
+Proﬁciency 
