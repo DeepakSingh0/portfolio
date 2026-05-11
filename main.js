@@ -1430,7 +1430,7 @@ class LiveCodeEffect {
             '<span class="code-keyword">class</span> <span class="code-variable">Developer</span>:',
             '  <span class="code-property">name</span> = <span class="code-string">"Deepak Singh"</span>',
             '  <span class="code-property">role</span> = <span class="code-string">"Full-Stack Developer"</span>',
-            '  <span class="code-property">experience</span> = <span class="code-number">4</span>',
+            '  <span class="code-property">experience</span> = <span class="code-string">"4+ years"</span>',
             '  <span class="code-property">skills</span> = [',
             '    <span class="code-string">"Python"</span>, <span class="code-string">"Django"</span>, <span class="code-string">"Next.js"</span>,',
             '    <span class="code-string">"Tailwind CSS"</span>, <span class="code-string">"Git"</span>, <span class="code-string">"AWS"</span>',
