@@ -143,26 +143,42 @@ function animateStats() {
 }
 
 // ===================================
-// Form Handling
+// Form Handling (FormSubmit → deepaksingh5279@gmail.com)
 // ===================================
 const contactForm = document.getElementById('contact-form');
 
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    // Get form data
-    const formData = new FormData(contactForm);
-    const data = Object.fromEntries(formData);
-    
-    // Show success message (you can replace this with actual form submission)
-    showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
-    
-    // Reset form
-    contactForm.reset();
-    
-    // In a real application, you would send this data to a server
-    console.log('Form submitted:', data);
-});
+if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        const originalText = submitBtn.textContent;
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending...';
+
+        try {
+            const response = await fetch('https://formsubmit.co/ajax/deepaksingh5279@gmail.com', {
+                method: 'POST',
+                body: new FormData(contactForm),
+                headers: { Accept: 'application/json' },
+            });
+
+            const result = await response.json();
+
+            if (response.ok && result.success) {
+                showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
+                contactForm.reset();
+            } else {
+                throw new Error(result.message || 'Failed to send');
+            }
+        } catch {
+            showNotification('Could not send message. Please email deepaksingh5279@gmail.com directly.', 'error');
+        } finally {
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalText;
+        }
+    });
+}
 
 // ===================================
 // Notification System
